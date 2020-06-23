@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Chart
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,36 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Chart</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <apx-chart
+    [series]="chartOptionsT.series"
+    [chart]="chartOptionsT.chart"
+    [xaxis]="chartOptionsT.xaxis"
+    [yaxis]="chartOptionsT.yaxis"
+    [title]="chartOptionsT.title"
+    [colors]="chartOptionsT.colors"
+    [dataLabels]="chartOptionsT.dataLabels"
+    [stroke]="chartOptionsT.stroke"
+    [title]="chartOptionsT.title"
+    [markers]="chartOptionsT.markers"
+    [legend]="chartOptionsT.legend"
+  ></apx-chart>
+
+  <apx-chart
+    [series]="chartOptionsH.series"
+    [chart]="chartOptionsH.chart"
+    [xaxis]="chartOptionsH.xaxis"
+    [yaxis]="chartOptionsH.yaxis"
+    [title]="chartOptionsH.title"
+    [colors]="chartOptionsH.colors"
+    [dataLabels]="chartOptionsH.dataLabels"
+    [stroke]="chartOptionsH.stroke"
+    [title]="chartOptionsH.title"
+    [markers]="chartOptionsH.markers"
+    [legend]="chartOptionsH.legend"
+  ></apx-chart>
+  
 </ion-content>

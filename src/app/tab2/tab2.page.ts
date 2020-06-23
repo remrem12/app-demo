@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'app-tab2',
@@ -8,5 +9,16 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
+  valueT = 25;
+  valueH = 40;
+  optionsT: Options = {
+    floor: 20,
+    ceil: 40
+  };
+
+  optionsH: Options = {
+    floor: 30,
+    ceil: 100
+  };
 
 }
